@@ -1,3 +1,64 @@
 html{
     scroll-behavior: smooth;
 }
+.container{
+	display: grid;
+	grid-gap: 25px; 
+	grid-template-columns: 1;
+	grid-template-rows: auto auto auto auto auto 50px;
+}
+.nav{
+    padding: 20px 0; 
+    text-align: left; 
+    grid-row: 1/ span 1;
+  }
+
+  nav ul{
+    list-style-type: none;
+  }
+  
+  nav li{
+    display: inline-block;
+    padding-right: 20px;
+    
+  }
+  
+  nav a{	
+    color: darkblue;
+    font-weight: bold;
+    font-family: optima;
+    font-size: 14px;
+  }
+  h1{
+  	grid-row: 1/ span 1;
+  	text-align: center;
+  	font-size: 40px;
+  	color: darkblue;
+
+  }
+  h2{
+	text-align: center;
+  }
+
+
+  footer{
+  	text-align: center;
+  }
+  
+  nav a:hover{
+    text-decoration: underline;
+  }
+/*tablet view */
+  @media all and (min-width: 600px){
+  }
+/*desktop view */
+  @media all and (min-width: 1100px){
+  }
+ /*reduce motion */
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+}
+/*styling for social overlays page*/
+
