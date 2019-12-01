@@ -6,6 +6,7 @@ html{
 	grid-gap: 25px;
 	grid-template-columns: 1;
 	grid-template-rows: auto auto auto auto auto 50px;
+  padding: 0px 50px 0px;
 }
 .nav{
     padding: 20px 0;
@@ -20,24 +21,87 @@ html{
   nav li{
     display: inline-block;
     padding-right: 20px;
-
   }
 
   nav a{
-    color: darkblue;
+    color: white;
     font-weight: bold;
     font-family: optima;
     font-size: 14px;
   }
+
+  .current{
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  a {
+    text-decoration: none;
+    color: #004d00;
+  }
+
+  header {
+    background-color: green;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+  }
+
+  body {
+    color: #3f3f3e;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    background-image: url("../images/tree_icon1.png");
+    background-repeat: no-repeat;
+  }
+
   h1{
   	grid-row: 1/ span 1;
   	text-align: center;
   	font-size: 40px;
-  	color: darkblue;
+  	color: white;
+    padding: 20px;
 
   }
   h2{
 	text-align: center;
+  color: darkblue;
+  padding: 10px;
+  }
+
+  .team-member {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+
+  .member-image {
+    grid-column: 1;
+    width: 200px;
+    height: 200px;
+  }
+
+  .headshot {
+    width: 80%;
+    height: 80%;
+  }
+
+  .member-desc {
+    grid-column: 2;
+  }
+
+  .projects {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .publications {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .contact {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
 
@@ -47,14 +111,15 @@ html{
     padding-bottom: 30px;
   }
 
-  nav a:hover{
-    text-decoration: underline;
+  a:hover{
+    text-decoration: darkblue;
   }
-/*tablet view */
-  @media all and (min-width: 600px){
-  }
+
 /*desktop view */
   @media all and (min-width: 1100px){
+    .container {
+      padding: 0px 200px 0px;
+    }
   }
  /*reduce motion */
   @media screen and (prefers-reduced-motion: reduce){
