@@ -70,7 +70,7 @@ html{
 
   .team-member {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 60% 40%;
     width: 100%;
   }
 
@@ -128,3 +128,5 @@ html{
     }
 }
 /*styling for social overlays page*/
+/*why we did stuff, reasoning for changes, documentation needed*/
+/*get rid of all br and add padding*/
