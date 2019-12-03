@@ -98,21 +98,9 @@ html{
     grid-column: 2;
   }
 
-  .projects {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .publications {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
   .contact {
-    padding-left: 100px;
-    padding-right: 100px;
+    text-align: center;
   }
-
 
   footer{
     background-color: green;
@@ -159,7 +147,22 @@ html{
  /*reduce motion */
   @media screen and (prefers-reduced-motion: reduce){
     html{
-        scroll-behavior: auto; /* Removes scroll animation */
+        scroll-behavior: initial;
+    }
+
+    .skip a{
+      background: #FEFEFE;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: top 1s auto;
+      transition: top 1s auto;
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
     }
 }
 /*styling for social overlays page*/
