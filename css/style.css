@@ -44,7 +44,11 @@ html{
     background-color: green;
     width: 100%;
     position: fixed;
-    top: 0px;
+    display: flex;
+  }
+
+  header * {
+    display: inline;
   }
 
   body {
@@ -52,12 +56,16 @@ html{
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     background-image: url("../images/tree_icon1.png");
     background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   h1{
   	grid-row: 1/ span 1;
-  	text-align: center;
-  	font-size: 40px;
+  	text-align: left;
+  	font-size: 24px;
   	color: white;
     padding: 20px;
 
