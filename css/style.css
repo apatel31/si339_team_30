@@ -2,15 +2,15 @@ html{
     scroll-behavior: smooth;
 }
 .container{
-	display: grid;
-	grid-gap: 25px;
-	grid-template-columns: 1;
-	grid-template-rows: auto auto auto auto auto 50px;
-  padding: 0px 50px 0px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1;
+  grid-template-rows: auto auto auto auto auto 50px;
+  padding: 0px 80px 0px;
+  padding-top: 80px;
 }
 .nav{
-    padding: 20px 0;
-    text-align: left;
+    padding: 20px;
     grid-row: 1/ span 1;
   }
 
@@ -33,14 +33,14 @@ html{
   .current{
     text-transform: uppercase;
     text-decoration: underline;
-  }
+  }
 
   a {
     text-decoration: none;
     color: #004d00;
   }
 
-  header {
+  .home-nav {
     background-color: green;
     width: 100%;
     position: fixed;
@@ -54,7 +54,7 @@ html{
   body {
     color: #3f3f3e;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-    background-image: url("../images/tree_icon1.png");
+    background-image: url("../images/tree_icon.png");
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: 500px;
@@ -63,29 +63,30 @@ html{
   }
 
   h1{
-  	grid-row: 1/ span 1;
-  	text-align: left;
-  	font-size: 24px;
-  	color: white;
-    padding: 20px;
-
+    grid-row: 1/ span 1;
+    text-align: center;
+    font-size: 20px;
+    color: green;
+    padding-bottom: 20px;
   }
+
   h2{
-	text-align: center;
-  color: darkblue;
-  padding: 10px;
+  text-align: center;
+  color: green;
+  padding: 16px;
   }
 
   .team-member {
     display: grid;
     grid-template-columns: 60% 40%;
     width: 100%;
+
   }
 
   .member-image {
     grid-column: 1;
     width: 200px;
-    height: 200px;
+    height: 200px;   
   }
 
   .headshot {
@@ -114,7 +115,7 @@ html{
 
 
   footer{
-  	text-align: center;
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -127,6 +128,17 @@ html{
   @media all and (min-width: 1100px){
     .container {
       padding: 0px 200px 0px;
+      padding-top: 100px;
+    }
+    .team-member {
+    width: 450px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+
+    .member-desc {
+      width: 200px;
     }
   }
  /*reduce motion */
@@ -136,5 +148,45 @@ html{
     }
 }
 /*styling for social overlays page*/
-/*why we did stuff, reasoning for changes, documentation needed*/
-/*get rid of all br and add padding*/
+  .page2_container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 10% 30% 40% 5%; 
+  }
+  .social-nav {
+    background-color: green;
+    width: 100%;
+    position: fixed;
+    grid-row: 1/ span 1;
+    height: 40px;
+  }
+  nav {
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 5px;
+
+  }
+  .social_overlays{
+    grid-row: 2/ span 1; 
+  }
+
+  .text_body{
+    grid-row: 3 / span 1; 
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .video{
+    grid-row: 4/ span 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+  }
+  footer{
+    grid-row: 5 / span 1;
+    padding: none;
+  }
