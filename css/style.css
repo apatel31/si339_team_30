@@ -86,7 +86,7 @@ html{
   .member-image {
     grid-column: 1;
     width: 200px;
-    height: 200px;   
+    height: 200px;
   }
 
   .headshot {
@@ -151,7 +151,7 @@ html{
   .page2_container{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 15% 10% 30% 40% 5%; 
+    grid-template-rows: 15% 10% 30% 40% 5%;
   }
   .social-nav {
     background-color: green;
@@ -167,11 +167,11 @@ html{
 
   }
   .social_overlays{
-    grid-row: 2/ span 1; 
+    grid-row: 2/ span 1;
   }
 
   .text_body{
-    grid-row: 3 / span 1; 
+    grid-row: 3 / span 1;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
