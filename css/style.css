@@ -137,10 +137,23 @@ html{
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-  }
+    }
 
     .member-desc {
       width: 200px;
+    }
+
+    body {
+      bottom:0px;
+    }
+
+    footer {
+      background-color: green;
+      color: white;
+      grid-row: 5 / span 1;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
     }
   }
  /*reduce motion */
@@ -154,6 +167,7 @@ html{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 15% 10% 30% 40% 5%;
+    bottom: 0;
   }
   .social-nav {
     background-color: green;
@@ -181,7 +195,7 @@ html{
     padding-bottom: 20px;
   }
   .video{
-    grid-row: 4/ span 1;
+    grid-row: 4 / span 1;
     display: flex;
     justify-content: center;
     padding-top: 50px;
@@ -191,6 +205,7 @@ html{
   footer{
     background-color: green;
     color: white;
-    grid-row: 5 / span 1;
+    grid-row: 8 / span 1;
     padding: none;
+    bottom: 0;
   }
