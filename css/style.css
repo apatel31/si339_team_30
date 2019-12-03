@@ -30,6 +30,14 @@ html{
     font-size: 14px;
   }
 
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   .skip a{
     background: #FEFEFE;
     left: 0;
@@ -156,16 +164,16 @@ html{
     font-size: 12px;
   }
 
+  .contact-text-block {
+    text-align: center;
+  }
+
   footer{
     background-color: green;
     color: white;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-
-  a:hover{
-    text-decoration: darkblue;
   }
 
 /*desktop view */
@@ -178,11 +186,18 @@ html{
     width: 450px;
     display: inline-flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     }
 
     .member-desc {
       width: 200px;
+    }
+
+    .project-item{
+      width: 450px;
+      display: inline-flex;
+      flex-flow: row wrap;
+      justify-content: center;
     }
 
     body {
