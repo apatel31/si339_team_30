@@ -24,7 +24,7 @@ html{
   }
 
   nav a{
-    color: #056644;
+    color: white;
     font-weight: bold;
     font-family: optima;
     font-size: 14px;
@@ -300,7 +300,7 @@ html{
     bottom: 0;
   }
   .social-nav {
-    background-color: #03B863;
+    background-color: #056644;
     width: 100%;
     position: fixed;
     grid-row: 1/ span 1;
