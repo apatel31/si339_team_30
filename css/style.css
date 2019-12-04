@@ -24,7 +24,7 @@ html{
   }
 
   nav a{
-    color: white;
+    color: #056644;
     font-weight: bold;
     font-family: optima;
     font-size: 14px;
@@ -103,7 +103,7 @@ html{
   h2{
     font-size: 18px;
     text-align: center;
-    color: #05AC72;
+    color: #056644;
     padding: 20px;
     margin-bottom: 30px;
     border-bottom: solid;
@@ -115,7 +115,7 @@ html{
   h3{
     font-size: 16px;
     text-align: center;
-    color: #05AC72;
+    color: #056644;
     padding: 10px;
     margin-bottom: 10px;
     border-bottom: solid;
@@ -255,8 +255,8 @@ html{
     }
 
     .project-image-item{
-      width: 400px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
     }
 
     body {
@@ -300,7 +300,7 @@ html{
     bottom: 0;
   }
   .social-nav {
-    background-color: #056644;
+    background-color: #c1e3d7;
     width: 100%;
     position: fixed;
     grid-row: 1/ span 1;
